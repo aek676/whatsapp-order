@@ -1,9 +1,7 @@
 {
   "name": "whatsapp-order",
   "version": "1.0.0",
-  "description": "",
   "type": "commonjs",
-  "main": "index.ts",
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js"

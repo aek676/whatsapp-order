@@ -1,0 +1,141 @@
+[
+  {
+    "id_order": "01510f09-6282-4d80-83a5-d98129c07cd2",
+    "id_chat": "f92d6ad6-c7cc-43ea-8d57-543a6c1c6cb1",
+    "id_establishment": "c7831588-4953-40c5-bdcf-02809d8a2370",
+    "name": "Ivelin",
+    "price": 15,
+    "is_pickup": true,
+    "address": null,
+    "created_at": "2025-08-12T11:17:53.917661+00:00",
+    "updated_at": "2025-08-12T11:17:55.659154+00:00",
+    "chats": {
+      "phone_number": "34633352814"
+    },
+    "details_order": [
+      {
+        "note": null,
+        "menus": null,
+        "products": {
+          "name": "Döner Kebab Completo",
+          "price": 7.5,
+          "category": "main",
+          "available": true,
+          "id_product": "c0152da7-bac3-43b0-b454-ddcfe4fa4063"
+        },
+        "quantity": 1,
+        "created_at": "2025-08-12T11:17:55.659154+00:00",
+        "id_details_order": "e962b193-7f61-4945-9c5a-4a054c79f918",
+        "selected_products": null
+      },
+      {
+        "note": null,
+        "menus": null,
+        "products": {
+          "name": "Plato Mixto solo Carne y con queso",
+          "price": 7.5,
+          "category": "main",
+          "available": true,
+          "id_product": "23f774bc-3f7e-4700-93ea-aa79b29d7712"
+        },
+        "quantity": 1,
+        "created_at": "2025-08-12T11:17:55.659154+00:00",
+        "id_details_order": "59eebc74-712b-454b-9cf6-db2592efa9f2",
+        "selected_products": null
+      }
+    ]
+  },
+  {
+    "id_order": "7fb5187f-d4ed-4622-9bfb-250b8436ea67",
+    "id_chat": "883c5bee-333e-44f8-bda2-8965da279880",
+    "id_establishment": "c7831588-4953-40c5-bdcf-02809d8a2370",
+    "name": "Victor",
+    "price": 0,
+    "is_pickup": true,
+    "address": null,
+    "created_at": "2025-08-11T12:39:19.806578+00:00",
+    "updated_at": "2025-08-11T12:39:19.806578+00:00",
+    "chats": {
+      "phone_number": "34641456618"
+    },
+    "details_order": []
+  },
+  {
+    "id_order": "f764c597-c193-4646-ab4a-279c6fe43cd8",
+    "id_chat": "883c5bee-333e-44f8-bda2-8965da279880",
+    "id_establishment": "c7831588-4953-40c5-bdcf-02809d8a2370",
+    "name": "Victor",
+    "price": 0,
+    "is_pickup": true,
+    "address": null,
+    "created_at": "2025-08-11T12:38:44.585511+00:00",
+    "updated_at": "2025-08-11T12:38:44.585511+00:00",
+    "chats": {
+      "phone_number": "34641456618"
+    },
+    "details_order": []
+  },
+  {
+    "id_order": "1cfa75d5-b768-4c98-8c45-bcdd3abb0364",
+    "id_chat": "883c5bee-333e-44f8-bda2-8965da279880",
+    "id_establishment": "c7831588-4953-40c5-bdcf-02809d8a2370",
+    "name": "Mbarka",
+    "price": 7.5,
+    "is_pickup": true,
+    "address": null,
+    "created_at": "2025-08-11T12:05:15.832448+00:00",
+    "updated_at": "2025-08-11T12:05:18.151599+00:00",
+    "chats": {
+      "phone_number": "34641456618"
+    },
+    "details_order": [
+      {
+        "note": null,
+        "menus": {
+          "name": "Döner Kebab Ternera",
+          "price": 7.5,
+          "id_menu": "75a63c1a-961e-40fb-ac7b-f618f20e6990"
+        },
+        "products": null,
+        "quantity": 1,
+        "created_at": "2025-08-11T12:05:18.151599+00:00",
+        "id_details_order": "b4bec3c7-8d80-42e4-805c-619c74ee2448",
+        "selected_products": [
+          "e603076d-8687-4db7-a16f-ca34b2f11d3a",
+          "da9b6578-8507-4000-9fff-369375acfc13",
+          "76906d9a-91e4-47f7-9d47-a7c9ce392d54"
+        ]
+      }
+    ]
+  },
+  {
+    "id_order": "be9f8c6e-ff63-4186-98f8-39476e632075",
+    "id_chat": "883c5bee-333e-44f8-bda2-8965da279880",
+    "id_establishment": "c7831588-4953-40c5-bdcf-02809d8a2370",
+    "name": "Julian",
+    "price": 0,
+    "is_pickup": true,
+    "address": null,
+    "created_at": "2025-08-11T11:55:00.15449+00:00",
+    "updated_at": "2025-08-11T11:55:00.15449+00:00",
+    "chats": {
+      "phone_number": "34641456618"
+    },
+    "details_order": []
+  },
+  {
+    "id_order": "b9e863d0-91e5-4795-b60a-9c268d03bcfb",
+    "id_chat": "883c5bee-333e-44f8-bda2-8965da279880",
+    "id_establishment": "c7831588-4953-40c5-bdcf-02809d8a2370",
+    "name": "Mando",
+    "price": 0,
+    "is_pickup": true,
+    "address": null,
+    "created_at": "2025-08-11T11:51:30.110405+00:00",
+    "updated_at": "2025-08-11T11:51:30.110405+00:00",
+    "chats": {
+      "phone_number": "34641456618"
+    },
+    "details_order": []
+  }
+]

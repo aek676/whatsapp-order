@@ -8,7 +8,7 @@ export type Json =
   | Json[]
 
 export type Database = {
-  // Allows to automatically instanciate createClient with right options
+  // Allows to automatically instantiate createClient with right options
   // instead of createClient<Database, { PostgrestVersion: 'XX' }>(URL, KEY)
   __InternalSupabase: {
     PostgrestVersion: "12.2.12 (cd3cf9e)"
@@ -23,10 +23,10 @@ export type Database = {
     Functions: {
       graphql: {
         Args: {
+          extensions?: Json
           operationName?: string
           query?: string
           variables?: Json
-          extensions?: Json
         }
         Returns: Json
       }
@@ -46,6 +46,7 @@ export type Database = {
           id_chat: string
           id_establishment: string
           phone_number: string
+          role: Database["public"]["Enums"]["chat_role"]
           updated_at: string | null
         }
         Insert: {
@@ -53,6 +54,7 @@ export type Database = {
           id_chat?: string
           id_establishment: string
           phone_number: string
+          role?: Database["public"]["Enums"]["chat_role"]
           updated_at?: string | null
         }
         Update: {
@@ -60,6 +62,7 @@ export type Database = {
           id_chat?: string
           id_establishment?: string
           phone_number?: string
+          role?: Database["public"]["Enums"]["chat_role"]
           updated_at?: string | null
         }
         Relationships: [
@@ -352,6 +355,7 @@ export type Database = {
           is_pickup: boolean
           name: string | null
           price: number | null
+          status: Database["public"]["Enums"]["order_status"]
           updated_at: string | null
         }
         Insert: {
@@ -363,6 +367,7 @@ export type Database = {
           is_pickup?: boolean
           name?: string | null
           price?: number | null
+          status?: Database["public"]["Enums"]["order_status"]
           updated_at?: string | null
         }
         Update: {
@@ -374,6 +379,7 @@ export type Database = {
           is_pickup?: boolean
           name?: string | null
           price?: number | null
+          status?: Database["public"]["Enums"]["order_status"]
           updated_at?: string | null
         }
         Relationships: [
@@ -529,7 +535,8 @@ export type Database = {
       }
     }
     Enums: {
-      [_ in never]: never
+      chat_role: "customer" | "staff"
+      order_status: "preparing" | "ready"
     }
     CompositeTypes: {
       [_ in never]: never
@@ -659,6 +666,9 @@ export const Constants = {
     Enums: {},
   },
   public: {
-    Enums: {},
+    Enums: {
+      chat_role: ["customer", "staff"],
+      order_status: ["preparing", "ready"],
+    },
   },
 } as const

@@ -105,6 +105,7 @@ export const getOrdersWithEstablishment = async (establishmentId: string): Promi
                 address,
                 created_at,
                 updated_at,
+                status,
                 chats (
                     phone_number
                 ),
@@ -143,4 +144,3 @@ export const getOrdersWithEstablishment = async (establishmentId: string): Promi
         throw error
     }
 }
-
