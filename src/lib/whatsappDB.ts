@@ -1,12 +1,5 @@
-import { getProduct, removeOrder } from "../supabase/databaseRepository";
+import { getProduct } from "../supabase/databaseRepository";
 import { getOrdersWithEstablishment } from "../supabase/getDataEstablishments";
-
-
-
-export function removePedidoByEst(establishmentId: string, pedidoId: string) {
-    console.log(`Removing pedido ${pedidoId} for establishment ${establishmentId}`);
-    return removeOrder(pedidoId.toString());
-}
 
 async function renderPedido(p: OrderWithDetails): Promise<string> {
     const fmtMoney = (value: number | string | null | undefined) => {
@@ -104,9 +97,9 @@ type CommandPlan =
 export async function registerWhatsappCommands(
     command: string,
     establishmentId: string,
-    chat: ChatData
+    role: string
 ): Promise<CommandPlan> {
-    if (chat.role !== 'staff') {
+    if (role !== 'staff') {
         return { kind: 'noop' };
     }
 

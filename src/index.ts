@@ -1,7 +1,7 @@
 import { Client, LocalAuth, RemoteAuth, type Message } from 'whatsapp-web.js';
 import puppeteer from 'puppeteer';
 import { SupabaseStore } from './supabase/supabase-store';
-import { registerWhatsappCommands, removePedidoByEst } from './lib/whatsappDB';
+import { registerWhatsappCommands } from './lib/whatsappDB';
 import { insertChat, markOrderAsDone } from './supabase/databaseRepository';
 const qrcode = require('qrcode-terminal');
 
@@ -75,7 +75,7 @@ client.on('message_create', async (message: Message) => {
 
         const command = message.body.trim();
         const chatId = message.fromMe ? message.to : message.from;
-        const plan = await registerWhatsappCommands(command, establishmentId, chat);
+        const plan = await registerWhatsappCommands(command, establishmentId, chat.role);
 
         switch (plan.kind) {
             case 'noop':
